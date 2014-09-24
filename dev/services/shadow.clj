@@ -90,7 +90,6 @@
   (-> state
       cljs/step-compile-modules
       cljs/closure-optimize
-      cljs/flush-unoptimized
       cljs/flush-modules-to-disk))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
