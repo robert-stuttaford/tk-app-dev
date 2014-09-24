@@ -1,11 +1,9 @@
 (ns tkad.app
-  (:require [cljs.core.async :refer [chan put! <!]]
-            [cljs.reader :as edn]
+  (:require [cljs.reader :as edn]
             [goog.dom]
             [om.core :as om :include-macros true]
             [om-tools.core :refer-macros [defcomponentk]]
-            [sablono.core :as html :refer-macros [html]])
-  (:require-macros [cljs.core.async.macros :as csp :refer [go]]))
+            [sablono.core :as html :refer-macros [html]]))
 
 (defcomponentk app-view [data owner]
   (render [_]

@@ -1,7 +1,5 @@
 (ns tkad.web.routes
   (:require [clojure.string :as string]
-            [clojure.tools.logging :as log]
-            [datomic.api :as d]
             [hiccup.core :refer [html]]
             [hiccup.element :refer [javascript-tag]]
             [hiccup.page :refer [include-js]]

@@ -1,10 +1,10 @@
 (ns services.cljx
-  (:require [clojure.java.io :as io]
+  (:require [cljx.core :as cljx]
+            [clojure.java.io :as io]
             [clojure.tools.logging :as log]
+            [juxt.dirwatch :refer [watch-dir close-watcher]]
             [plumbing.core :refer :all]
-            [puppetlabs.trapperkeeper.core :as tk]
-            [cljx.core :as cljx]
-            [juxt.dirwatch :refer [watch-dir close-watcher]]))
+            [puppetlabs.trapperkeeper.core :as tk]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Helpers

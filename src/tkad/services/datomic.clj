@@ -1,11 +1,11 @@
 (ns tkad.services.datomic
   (:require [clojure.java.io :as io]
             [clojure.tools.logging :as log]
-            [tkad.datomic.util :refer :all]
             [datomic.api :as d]
             [io.rkn.conformity :as c]
             [plumbing.core :refer :all]
-            [puppetlabs.trapperkeeper.core :as tk]))
+            [puppetlabs.trapperkeeper.core :as tk]
+            [tkad.datomic.util :refer :all]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Utilities

@@ -1,14 +1,14 @@
 (ns tkad.services.pedestal
   (:require [clojure.tools.logging :as log]
-            [tkad.web.routes :as routes]
-            [tkad.datomic.util :refer :all]
             [io.pedestal.http :as http]
             [io.pedestal.http.body-params :as body-params]
             [io.pedestal.http.ring-middlewares :as middlewares]
             [io.pedestal.interceptor :refer [definterceptor definterceptorfn on-request]]
             [plumbing.core :refer :all]
             [puppetlabs.trapperkeeper.core :as tk]
-            [ring.middleware.session.cookie :as cookie]))
+            [ring.middleware.session.cookie :as cookie]
+            [tkad.datomic.util :refer :all]
+            [tkad.web.routes :as routes]))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Default interceptors

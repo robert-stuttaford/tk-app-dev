@@ -1,12 +1,12 @@
 (ns user
   (:require [clojure.pprint :refer [pprint]]
             [clojure.tools.namespace.repl :refer [refresh]]
-            [tkad.services.datomic :as datomic]
-            [tkad.services.pedestal :as pedestal]
             [puppetlabs.trapperkeeper.app :as tka]
             [puppetlabs.trapperkeeper.core :as tk]
             [services.cljx :as cljx]
-            [services.shadow :as shadow]))
+            [services.shadow :as shadow]
+            [tkad.services.datomic :as datomic]
+            [tkad.services.pedestal :as pedestal]))
 
 (declare go stop)
 
