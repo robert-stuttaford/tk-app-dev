@@ -1,0 +1,7 @@
+;; See https://github.com/rkneufeld/conformity#usage for details on this format
+
+{:some/schema
+ {:txes
+  [[
+  ;; put your schema in here
+  ]]}}

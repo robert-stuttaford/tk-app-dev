@@ -1,0 +1,5 @@
+{:environment :production
+ :global      {:logging-config "./src/logback.xml"}
+ :webserver   {:host "localhost"
+               :port 8080}
+ :datomic     {:main "datomic:mem://localhost:4334/tkad"}}
